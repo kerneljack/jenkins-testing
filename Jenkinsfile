@@ -1,11 +1,11 @@
 pipeline {
-    agent { label 'mydockerlabel' }
+    agent { label 'docker-slave' }
     stages {
         stage('build') {
             agent {
                 docker {
                     // Set both label and image
-                    label 'mydockerlabel'
+                    label 'docker-slave'
                     image 'python:3.10.1-alpine'
                 }
             }
