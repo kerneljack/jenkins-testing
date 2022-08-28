@@ -20,7 +20,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'ls -l /home/jenkins/agent'
+                sh 'sleep 300'
                 // sh 'docker --version'
                 sh 'hostname'
                 sh 'python --version'
