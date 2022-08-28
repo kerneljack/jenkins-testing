@@ -20,7 +20,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker --version'
+                sh 'ls -l /home/jenkins/agent'
+                // sh 'docker --version'
                 sh 'hostname'
                 sh 'python --version'
             }
