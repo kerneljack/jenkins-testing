@@ -21,8 +21,8 @@ pipeline {
         stage('build') {
             steps {
                 container('docker-dind') {
-                    sh 'sleep 300'
-                    // sh 'docker --version'
+                    // sh 'sleep 300'
+                    sh 'docker --version'
                     sh 'hostname'
                     sh 'python --version'
                 }
