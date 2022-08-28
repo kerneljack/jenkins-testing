@@ -2,7 +2,7 @@ pipeline {
     agent {
         kubernetes {
             label 'jenkins-slave'
-            container ('dind')
+            defaultContainer 'dind'
         }
     }
     stages {
