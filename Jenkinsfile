@@ -15,6 +15,7 @@ pipeline {
               - name: DOCKER_TLS_CERTDIR
                 value: ""
         """
+        }
     stages {
         stage('build') {
             steps {
