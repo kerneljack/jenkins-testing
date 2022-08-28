@@ -1,5 +1,5 @@
 pipeline {
-    agent 
+    agent {
         kubernetes {
             label 'docker-in-docker'
             yaml """
@@ -16,6 +16,7 @@ pipeline {
                 value: ""
         """
         }
+    }
     stages {
         stage('build') {
             steps {
