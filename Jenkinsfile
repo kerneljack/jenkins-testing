@@ -23,6 +23,8 @@ pipeline {
                 container('docker-dind') {
                     // sh 'sleep 300'
                     sh 'docker --version'
+                    sh 'pwd'
+                    sh 'ls -la'
                     sh 'hostname'
                     // sh 'python --version'
                 }
